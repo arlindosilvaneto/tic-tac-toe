@@ -2,8 +2,8 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme, {shallow} from 'enzyme';
-import Board from './board';
-import Square from '../square/square';
+import Board from './index';
+import Square from '../square';
 
 describe('Board component', () => {
   Enzyme.configure({ adapter: new Adapter() });

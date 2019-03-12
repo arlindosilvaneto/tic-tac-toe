@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Square from '../square/square';
+import Square from '../square';
 
 import './board.css';
 

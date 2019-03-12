@@ -2,7 +2,7 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme, {shallow} from 'enzyme';
-import Square from './square';
+import Square from './index';
 
 describe('Square base component', () => {
   Enzyme.configure({ adapter: new Adapter() });
