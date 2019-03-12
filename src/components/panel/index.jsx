@@ -10,7 +10,7 @@ const Panel = ({player = 'O', onReset = emptyFunction}) => {
     return (
         <div className='panel-wrapper'>
             <div className='turn-info'>
-                <span className='turn-title'>Turn</span>
+                <span className='turn-title'>Turn:&nbsp;</span>
                 <div className={`turn-icon ${playerClass}`}></div>
             </div>
 
