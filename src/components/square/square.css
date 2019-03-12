@@ -1,0 +1,12 @@
+
+.sprite-x-state {
+	background: url('../../images/ttt-icons.png') no-repeat -7px -6px;
+	width: 86px;
+	height: 85px;
+}
+
+.sprite-o-state {
+	background: url('../../images/ttt-icons.png') no-repeat -110px -108px;
+	width: 89px;
+	height: 89px;
+}
