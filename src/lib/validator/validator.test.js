@@ -2,8 +2,8 @@ import gameValidator from './index';
 
 describe('Game validator library', () => {
     const runningGame = '-XO-XOO--X',
-        finishedGameForX = 'OO-XXX-O--',
-        finishedGameForO = 'XOOXO-OX-',
+        finishedGameForX = 'OO-XXX-O-',
+        finishedGameForO = 'XOOXO--OX',
         drawnGame = 'OXOOXXXOO';
 
     it('should return empty when game not finished', () => {
