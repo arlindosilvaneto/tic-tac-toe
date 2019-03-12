@@ -30,7 +30,7 @@ describe('Panel base component', () => {
   it('should have correct image class for O player', () => {
     const panel = shallow(<Panel player={OPlayer} />);
 
-    expect(panel.find('.sprite-x-state').length).toEqual(1);
+    expect(panel.find('.sprite-o-state').length).toEqual(1);
   });
 
   it('should handle reset button as expected', () => {
