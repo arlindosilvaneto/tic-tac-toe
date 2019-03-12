@@ -1,3 +1,3 @@
 import React, { Component, Fragment } from 'react';
 
-import 'index.css';
+import './board.css';
