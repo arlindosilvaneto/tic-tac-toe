@@ -1,1 +1,7 @@
-
+.square-wrapper {
+    width: 87px;
+    height: 87px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    padding: 5px;
+}

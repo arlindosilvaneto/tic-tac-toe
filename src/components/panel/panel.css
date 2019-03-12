@@ -1,0 +1,23 @@
+.panel-wrapper {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.turn-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.turn-title {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: bottom;
+    color: #135313;
+}
+
+.turn-icon {
+    display: inline-block;
+    zoom:0.30;
+    -moz-transform:scale(0.30);
+    -moz-transform-origin: 0 0;
+}

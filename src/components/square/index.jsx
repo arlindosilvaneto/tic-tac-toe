@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './square.css';
+
 const emptyState = '-',
     emptyFunction = () => {};
 
