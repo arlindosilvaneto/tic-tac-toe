@@ -40,4 +40,12 @@ describe('Panel base component', () => {
 
     expect(clicked).toHaveBeenCalledTimes(1);
   });
+
+  it('should handle rewind button as expected', () => {
+    const panel = shallow(<Panel player={OPlayer} onRewind={clicked} />);
+
+    panel.find('#rewind-move').simulate('click');
+
+    expect(clicked).toHaveBeenCalledTimes(1);
+  });
 });
