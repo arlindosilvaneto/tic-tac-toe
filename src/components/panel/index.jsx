@@ -4,7 +4,7 @@ import './panel.css';
 
 const emptyFunction = () => {};
 
-const Panel = ({player = 'O', onReset = emptyFunction}) => {
+const Panel = ({player = 'O', onReset = emptyFunction, onRewind = emptyFunction}) => {
     const playerClass = `sprite-${player.toLowerCase()}-state`;
 
     return (
@@ -15,6 +15,7 @@ const Panel = ({player = 'O', onReset = emptyFunction}) => {
             </div>
 
             <div className='button-bar'>
+                <button id='rewind-move' onClick={onRewind}>Rewind Move</button>
                 <button id='reset-game' onClick={onReset}>Reset Game</button>
             </div>
         </div>
