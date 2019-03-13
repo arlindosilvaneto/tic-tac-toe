@@ -2,8 +2,9 @@ import React from 'react';
 
 import './overlay.css';
 
-const Overlay = ({open = false, winner = '', onReset}) => {
-    const winnerClass = winner !== 'OX' ? `sprite-${winner.toLowerCase()}-state` : '';
+const Overlay = ({winner = '', onReset}) => {
+    const open = winner !== '',
+        winnerClass = winner !== 'OX' ? `sprite-${winner.toLowerCase()}-state` : '';
 
     return open ? (
         <div className="overlay-wrapper">

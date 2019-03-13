@@ -1,11 +1,10 @@
-import React, { Component, createContext } from 'react';
+import React, { Component } from 'react';
 
 import Overlay from '../../components/overlay';
 import Board from '../../components/board';
 import Panel from '../../components/panel';
 import gameValidator from '../../lib/validator';
 
-export const GameContext = createContext();
 const defaultState = {
     gameState: '---------',
     player: 'O',
@@ -56,7 +55,7 @@ export default class Game extends Component {
     render() {
         return (
             <div className="game-wrapper">
-                <Overlay winner={this.state.winner} open={this.state.winner !== ''} onReset={this.onGameReset} />
+                <Overlay winner={this.state.winner} onReset={this.onGameReset} />
                 <Board state={this.state.gameState} onClick={this.onSquareClick} />
                 <Panel player={this.state.player} onReset={this.onGameReset} onRewind={this.onRewindMove} />
             </div>
